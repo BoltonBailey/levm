@@ -9,8 +9,9 @@ To run the port as I have it, you will have to do several things:
 
 * Install [Ollama](https://ollama.com/) (Doubt any of this works on Windows)
 * Install `llama3:70b` via `ollama pull llama3:70b`
-  * Alternativey, install `starcoder2:15b` and change the Modelfile and python script to match.
+  * Alternatively, install `starcoder2:15b` and change the Modelfile and python script to match.
 * Run `ollama create translator -f ./Modelfile` to create the model with the rust-to-lean4 prompt
 * Install `langchain_community` via `pip install langchain_community`
+* Clone the REVM repository into the project
 * Run `translate.py`
 
